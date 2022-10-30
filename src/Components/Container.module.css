@@ -1,0 +1,79 @@
+
+.bodyContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: 70vw;
+  max-height: 80vh;
+}
+.contentLeft{
+  flex:1;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contentRight{
+  flex:1;
+  display: flex;
+  justify-content: center;
+
+}
+h1{
+  font-size: 70px;
+  color: black;
+}
+p{
+  font-size: 20px;
+  max-width: 70%;
+  line-height: 30px;
+}
+button{
+  padding: 20px;
+  max-width: 30%;
+  cursor: pointer;
+  background-color:black ;
+  color: white;
+  border-radius: 17px;
+  margin-top: -30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+button:hover{
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
+img{
+  margin-left: 20px;
+  height: 100%;
+  width: 100%;
+}
+.partners{
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+  .mainContent{
+    flex-direction: column-reverse;
+    max-height: 100%;
+  }
+  
+  .mainConten img{
+    object-fit: contain;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  .contentLeft h1,p,button,div{
+    margin-bottom: 30px;
+  }
+  .contentLeft button{
+    margin-top: 0px;
+  }
+}
